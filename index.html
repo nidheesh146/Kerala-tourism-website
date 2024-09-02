@@ -7,37 +7,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        @media (max-width: 768px) {
-  /* Make images responsive */
+     @media (max-width: 480px) {
+  /* For smaller screens (e.g., iPhone 4, older Android devices) */
   img {
     width: 100%;
     height: auto;
     padding-left: 0;
     border-radius: 10px;
   }
-
-  /* Adjust paragraph text alignment */
   p {
     text-align: left;
+    font-size: 14px;
   }
-
-  /* Make footer elements stack vertically */
-  .footer {
-    text-align: center;
+  h5 {
+    font-size: 16px;
   }
+}
 
-  .logo {
-    margin-top: 10px;
+@media (max-width: 768px) and (min-width: 481px) {
+  /* For medium screens (e.g., iPhone 6/7/8, newer Android devices) */
+  img {
+    width: 90%;
+    height: auto;
+    padding-left: 5%;
+    border-radius: 10px;
   }
-
-  /* Reduce font size for historical monuments heading */
+  p {
+    text-align: left;
+    font-size: 16px;
+  }
   h5 {
     font-size: 18px;
   }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* For larger screens (e.g., tablets, small laptops) */
+  img {
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+    border-radius: 10px;
+  }
+  p {
+    text-align: left;
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+}
        
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -49,9 +70,7 @@
             background-image: url('https://imgs.search.brave.com/rQuupDLmh9Ks-UZae1mG9s8iLSofWRFxWM0bEJ57QFE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI3ODMy/NDQuanBn');
             background-size:cover;
             opacity: 0.8;
-            
-
-          
+                 
         }
         .slideshow {
             height: 400px; 
